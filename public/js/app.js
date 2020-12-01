@@ -1,7 +1,7 @@
 const weatherSearch = (address) => {
     const msg1 = document.querySelector('#msg-1')
     const msg2 = document.querySelector('#msg-2')
-    const url = 'http://localhost:3000/weather?address=' + address
+    const url = '/weather?address=' + address
     msg1.textContent = 'Finding the forecat'
     msg2.textContent = ''
     fetch(url).then(response => {
